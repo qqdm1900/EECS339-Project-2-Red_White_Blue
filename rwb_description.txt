@@ -1,0 +1,30 @@
+Team members:
+Yeqiu Fang(yfe755), Xi Zheng(XZA919), Mengyun Lv(mlk673)
+
+
+URL: 
+http://murphy.wot.eecs.northwestern.edu/~mlk673/rwb/rwb.pl
+
+
+Root account name: root
+Root account password: rootroot
+
+Part 1:
+The Select Form with checkboxes and dynamic generated cycles is in the Base part in rwb.pl. When click the apply button, it'll call the ViewShift function in rwb.js.
+
+Part 2:
+We completed the invite-user and give-opinion-data parts in rwb.pl. The inviter can choose to give what permissions to invitee. And the permission checkboxes are dynamic generated according to the inviter's permissions. And the link sent to invitee is distinct and one-time click.
+
+Part 3:
+We extended the sub committees, individuals and opinions in rwb.pl to generate the summary information. The result tables are delivered to the 'Contributions Summary' div written in Base through the UpdateMap function in rwb.js. When there are not enough data points, it will automatically query larger regions around the user. 
+
+
+Bonus 1:
+Whenever a new password is inserted into the database,we encrypt it by adding an extra string "code" to the end of the original password. Whenever the database is validating a user(except root), we encrypt the input password in the same way. 
+
+Bonus 2:
+We add a additional query Max to the current view to show the maximum transaction amount contributed by committees and individuals respectfully.
+
+Bonus 3:
+We create a table for the winner of each cycle of election.According to the choices of the user, we present the information of the winner dynamically in the current map view.
+
